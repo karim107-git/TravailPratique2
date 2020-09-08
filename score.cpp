@@ -45,7 +45,7 @@ void Score::setMeilleurScore(unsigned long int meilleurScore)
 
 bool Score::operator<(const Score score_a_droite) const
 {
-    if(this->meilleurScore > score_a_droite.meilleurScore)
+    if(this->meilleurScore < score_a_droite.meilleurScore)
         return true;
 
     return false;
