@@ -1,0 +1,10 @@
+-IC:\winbuild\include
+-Ic:\winbuild\include\c++\4.8.3
+-Ic:\winbuild\include\c++\4.8.3\i686-w64-mingw32
+-Ic:\winbuild\include\c++\4.8.3\backward
+-Ic:\winbuild\lib\gcc\i686-w64-mingw32\4.8.3\include
+-Ic:\winbuild\lib\gcc\i686-w64-mingw32\4.8.3\include-fixed
+-Ic:\winbuild\i686-w64-mingw32\include
+-IE:\git\git\TP2
+-target
+i686-pc-windows-gnu
