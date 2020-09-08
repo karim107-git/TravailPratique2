@@ -15,7 +15,7 @@ int main()
     /*On teste si tout est OK puisque des problèmes
      * peuvent survenir lors de l'ouverture d'un fichier*/
     if(mon_lecteur) {
-        std::string identifiantPrtie;
+        std::string identifiantPartie; 
         std::string loginPlayer;
         std::string scorePlayer;
 
@@ -24,13 +24,15 @@ int main()
          * et on les insère dans notre arbre binaire de recherche std::set<Score>*/
 
         while(mon_lecteur.eof() == false) {
-
-            getline(mon_lecteur, identifiantPrtie);
+            //lecture des données
+            getline(mon_lecteur, identifiantPartie);
             getline(mon_lecteur, loginPlayer);
             getline(mon_lecteur, scorePlayer);
 
-            if(mon_lecteur.eof() == false) {
-                Score scoreTemp(std::stol(identifiantPrtie), loginPlayer, stol(scorePlayer));
+            if(mon_lecteur.eof() == false) { 
+             /*Conversion de l'identifiant de la Partie et le score en entier long après la lecture
+              *instanciation d'un objet Score et l'insertion dans notre std::set (notre arbre binaire de recherche)*/
+                Score scoreTemp(std::stol(identifiantPartie), loginPlayer, stol(scorePlayer));
                 myFileAsterostorm.insert(scoreTemp);
             }
         }
