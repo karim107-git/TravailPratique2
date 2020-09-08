@@ -31,7 +31,7 @@ int main()
 
             if(mon_lecteur.eof() == false) {
                 /*Conversion de l'identifiant de la Partie et le score en entier long après la lecture
-                 *instanciation d'un objet Score et l'insertion dans notre std::set (notre arbre binaire de recherche)*/
+                 *instanciation d'un objet Score et l'insertion dans notre std::priority_queue (Tas) */
                 Score scoreTemp(std::stol(identifiantPartie), loginPlayer, stol(scorePlayer));
                 myFileAsterostorm.push(scoreTemp);
             }
